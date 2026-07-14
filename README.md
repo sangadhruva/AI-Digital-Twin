@@ -158,7 +158,7 @@ https://github.com/sangadhruva
 
 LinkedIn
 
-(Add your LinkedIn prohttps://www.linkedin.com/in/sanga-dhruva-688287322/file here)
+https://www.linkedin.com/in/sanga-dhruva-688287322/
 
 ---
 
