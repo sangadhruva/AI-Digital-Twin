@@ -1,290 +1,165 @@
-\# 🤖 Candidate Digital Twin
+# 🤖 AI Candidate Digital Twin
 
+An AI-powered Candidate Digital Twin that allows recruiters to interact with a candidate using natural language. Recruiters can upload a candidate's resume and ask questions about skills, education, projects, certifications, and experience.
 
+---
 
-An AI-powered Candidate Digital Twin that allows recruiters to interact with a candidate's resume using natural language. Built using React, FastAPI, LangGraph, ChromaDB, and Groq LLM with Retrieval-Augmented Generation (RAG).
+## 🚀 Features
 
+- 📄 Upload PDF, DOCX and TXT resumes
+- 🔍 Automatic document parsing
+- 🧠 AI-powered question answering
+- 📚 Retrieval-Augmented Generation (RAG)
+- 💾 ChromaDB vector database
+- 🤖 LangGraph AI Agent
+- ⚡ Groq LLM integration
+- 🎨 Modern React + TypeScript frontend
+- 🚀 FastAPI backend
+- 👤 Single active candidate profile
 
+---
 
-\---
+# 🏗️ Tech Stack
 
+### Frontend
 
+- React
+- TypeScript
+- Vite
+- CSS
 
-\## 🚀 Features
+### Backend
 
+- FastAPI
+- LangGraph
+- ChromaDB
+- Sentence Transformers
+- Groq API
+- Python
 
+---
 
-\- 📄 Upload PDF, DOCX, and TXT resumes
-
-\- 🧠 Automatic text extraction and chunking
-
-\- 🔍 Semantic search using ChromaDB
-
-\- 🤖 AI-powered recruiter assistant
-
-\- 💬 Ask questions about:
-
-&#x20; - Skills
-
-&#x20; - Education
-
-&#x20; - Experience
-
-&#x20; - Projects
-
-&#x20; - Certifications
-
-\- ⚡ FastAPI REST backend
-
-\- 🎨 Modern React + TypeScript frontend
-
-\- 🔄 Single active candidate profile
-
-\- 🗑 Clear candidate profile with one click
-
-
-
-\---
-
-
-
-\## 🏗 Tech Stack
-
-
-
-\### Frontend
-
-\- React
-
-\- TypeScript
-
-\- Vite
-
-\- Axios
-
-\- CSS
-
-
-
-\### Backend
-
-\- FastAPI
-
-\- Python
-
-\- LangGraph
-
-\- Groq API
-
-\- ChromaDB
-
-\- Sentence Transformers
-
-\- Uvicorn
-
-
-
-\---
-
-
-
-\## 📂 Project Structure
-
-
+# 📂 Project Structure
 
 ```
-
-AI-Digital-Twin
-
+AI-Digital-Twin/
 │
-
-├── backend
-
-│   ├── app
-
-│   │   ├── agents
-
-│   │   ├── api
-
-│   │   ├── rag
-
-│   │   └── services
-
-│   └── requirements.txt
-
+├── backend/
+│   ├── app/
+│   ├── requirements.txt
 │
-
-├── frontend
-
-│   ├── src
-
-│   │   ├── components
-
-│   │   ├── services
-
-│   │   └── styles
-
-│   └── package.json
-
+├── frontend/
+│   ├── src/
+│   ├── public/
 │
-
 └── README.md
-
 ```
 
+---
 
+# ⚙️ Installation
 
-\---
-
-
-
-\## ⚙ Installation
-
-
-
-\### Backend
-
-
+## Clone Repository
 
 ```bash
+git clone https://github.com/sangadhruva/AI-Digital-Twin.git
 
+cd AI-Digital-Twin
+```
+
+---
+
+## Backend
+
+```bash
 cd backend
 
 pip install -r requirements.txt
 
-python -m uvicorn app.main:app --reload --port 8001
-
+uvicorn app.main:app --reload
 ```
 
+Backend runs at
 
+```
+http://localhost:8001
+```
 
-\### Frontend
+Swagger API
 
+```
+http://localhost:8001/docs
+```
 
+---
+
+## Frontend
 
 ```bash
-
 cd frontend
 
 npm install
 
 npm run dev
-
 ```
 
+Frontend runs at
 
+```
+http://localhost:5173
+```
 
-\---
+---
 
+# 💡 How It Works
 
+1. Upload a candidate resume.
+2. The backend extracts text.
+3. Text is split into chunks.
+4. Chunks are stored in ChromaDB.
+5. Recruiters ask questions.
+6. Relevant chunks are retrieved.
+7. LangGraph orchestrates the workflow.
+8. Groq LLM generates the final answer.
 
-\## 🔄 Workflow
+---
 
+# 📸 Screenshots
 
+Add screenshots here.
 
-1\. Upload a resume
+Example:
 
-2\. Resume is parsed and cleaned
+- Home Page
+- Resume Upload
+- AI Chat
+- Question Answering
 
-3\. Text is split into chunks
+---
 
-4\. Chunks are stored in ChromaDB
+# 🔮 Future Improvements
 
-5\. Recruiter asks a question
+- Recruiter Dashboard
+- Multiple Candidate Profiles
+- Authentication
+- Cloud Deployment
+- Voice Interaction
+- Interview Report Generation
 
-6\. Relevant chunks are retrieved
+---
 
-7\. LangGraph agent generates the answer
+# 👨‍💻 Author
 
-8\. Response is displayed in the chat interface
+**Sanga Dhruva**
 
+GitHub
 
+https://github.com/sangadhruva
 
-\---
+LinkedIn
 
+(Add your LinkedIn prohttps://www.linkedin.com/in/sanga-dhruva-688287322/file here)
 
+---
 
-\## 📸 Screenshots
-
-
-
-\### Home Page
-
-
-
-\_Add screenshot here\_
-
-
-
-\### Upload Resume
-
-
-
-\_Add screenshot here\_
-
-
-
-\### AI Chat
-
-
-
-\_Add screenshot here\_
-
-
-
-\---
-
-
-
-\## 🔮 Future Improvements
-
-
-
-\- Multi-candidate support
-
-\- Voice interaction
-
-\- Resume comparison
-
-\- Interview simulation
-
-\- Authentication
-
-\- Cloud deployment
-
-\- Conversation history
-
-
-
-\---
-
-
-
-\## 👨‍💻 Author
-
-
-
-\*\*Sanga Dhruva\*\*
-
-
-
-GitHub: https://github.com/sangadhruva
-
-
-
-LinkedIn:
-
-https://www.linkedin.com/in/sanga-dhruva-688287322/
-
-
-
-\---
-
-
-
-\## ⭐ If you like this project
-
-
-
-Please consider giving it a ⭐ on GitHub.
-
+# ⭐ If you found this project useful, consider giving it a star.
