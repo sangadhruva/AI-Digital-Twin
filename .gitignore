@@ -1,0 +1,27 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables
+.env
+backend/.env
+
+# Uploaded and generated data
+backend/uploads/
+backend/chroma_db/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
